@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Example Page</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3">Welcome to Quiz Game Galore!</h1>
+        <p>
+          Construct each question with the form on the left. Once the form is complete, submit it to save it as a question in your Quiz and clear the form for a new question. The first Answer in each quiz will be the correct answer - don't worry, the Quiz will shuffle the answers each time Quiz Game is played!
+        </p>
+      </div>
+      <div class="row">
+        <!-- this first column will be *static*, generating the quiz itself in the right column -->
+        <div class="col">
+          <!-- a1 will *always* be the correct answer: answers will be shuffled by the quiz game on generation -->
+          <form>
+            <div class="form-group">
+              <label for="q1">Question 1</label>
+              <input type="text" class="question" id="q1" />
+            </div>
+            <div class="form-group">
+              <label for="q1a1">Answer 1</label>
+              <input type="text" class="answer" id="q1a1" />
+            </div>
+            <div class="form-group">
+              <label for="q1a2">Answer 2</label>
+              <input type="text" class="answer" id="q1a2" />
+            </div>
+            <div class="form-group">
+              <label for="q1a3">Answer 3</label>
+              <input type="text" class="answer" id="q1a3" />
+            </div>
+          </form>
+        </div>
+        <div class="col" id="quiz-tray">
+          <p>
+            This is where the quiz content will get added once it is submitted.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- More Bootstrap -->
+  </body>
+</html>
